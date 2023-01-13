@@ -1,0 +1,14 @@
+all:
+  children:
+    proxmox:
+      hosts:
+        hou-pve-01:
+          ansible_host: "hou-pve-01.redtail.com"
+        hou-pve-02:
+          ansible_host: "hou-pve-02.redtail.com"
+        hou-pve-03:
+          ansible_host: "hou-pve-03.redtail.com"
+        hou-pve-04:
+          ansible_host: "hou-pve-04.redtail.com"
+        hou-pve-05:
+          ansible_host: "hou-pve-05.redtail.com"

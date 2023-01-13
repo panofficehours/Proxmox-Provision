@@ -1,0 +1,15 @@
+---
+#------------------------------------------------------------------------
+# CREATE A KVM VIRTUAL MACHINE ON PROXMOX
+#------------------------------------------------------------------------
+- hosts: hou-pve-01
+  connection: local
+  gather_facts: False
+
+  tasks:
+    - proxmox_kvm:
+        api_user: "automation@pve"
+        api_password: "paloalto1!"
+        api_host: "{{ ansible_host }}"
+        name: "super-awesome-test-42"
+        node: "{{ ansible_host }}"
