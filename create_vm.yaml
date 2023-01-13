@@ -13,4 +13,4 @@
         api_password: "paloalto1!"
         api_host: "{{ ansible_host }}"
         name: "super-awesome-test-42"
-        node: "{{ ansible_host }}"
+        node: "hou-pve-01"
