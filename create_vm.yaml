@@ -7,7 +7,8 @@
   gather_facts: False
 
   tasks:
-    - proxmox_kvm:
+    - name: "Deploy a VM on Proxmox"
+      community.general.proxmox_kvm:
         api_user: "automation@pve"
         api_password: "paloalto1!"
         api_host: "{{ ansible_host }}"
